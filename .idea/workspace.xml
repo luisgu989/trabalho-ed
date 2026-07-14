@@ -1,24 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec59f236-ae09-4e2e-9b12-5a479dddd2ab" name="Changes" comment="" />
+    <list default="true" id="ec59f236-ae09-4e2e-9b12-5a479dddd2ab" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/aplicacao/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aplicacao/MotorDoJogo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dominio/Carta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dominio/Jogador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/estruturas/ListaEncadeada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/estruturas/No.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/estruturas/Pilha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="3G9ci51viOEzwsaG8WndQ6yTFN6" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "C:/Users/luisg/IdeaProjects/trabalho_ed/src/Main.java",
     "vue.rearranger.settings.migration": "true"
