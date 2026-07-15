@@ -2,16 +2,16 @@ package estruturas;
 
 import dominio.Carta;
 
-public class ListaEncadeada<T> {
+public class ListaEncadeada {
 
-    private NoEnc<T> primeiro;
+    private No primeiro;
     private int tamanho;
 
     public ListaEncadeada() {
         this.primeiro = null;
         this.tamanho = 0;
     }
-    public NoEnc<T> getPrimeiro() {
+    public No getPrimeiro() {
         return primeiro;
     }
 
@@ -23,13 +23,13 @@ public class ListaEncadeada<T> {
         return primeiro == null;
     }
 
-    public void adicionar(T dado) {
-        NoEnc novoNo = new NoEnc(dado);
+    public void adicionar(Carta carta) {
+        No novoNo = new No(carta);
 
         if (estaVazia()) {
             primeiro = novoNo;
         } else {
-            NoEnc atual = primeiro;
+            No atual = primeiro;
             while (atual.getProximo() != null) {
                 atual = atual.getProximo();
             }
@@ -38,17 +38,17 @@ public class ListaEncadeada<T> {
         tamanho++;
     }
 
-    public T removerPorIndice(int indice) {
+    public Carta removerPorIndice(int indice) {
         if (indice < 0 || indice >= tamanho) {
             throw new IndexOutOfBoundsException("Erro: Índice inválido! A posição " + indice + " não existe na estrutura.");
         }
 
-        NoEnc removido;
+        No removido;
         if (indice == 0) {
             removido = primeiro;
             primeiro = primeiro.getProximo();
         } else {
-            NoEnc anterior = primeiro;
+            No anterior = primeiro;
             for (int i = 0; i < indice - 1; i++) {
                 anterior = anterior.getProximo();
             }
@@ -59,15 +59,15 @@ public class ListaEncadeada<T> {
         removido.setProximo(null);
         tamanho--;
 
-        return (T) removido.getDado();
+        return removido.getCarta();
     }
 
-    public void exibir() {
-        NoEnc atual = primeiro;
+    public void print() {
+        No atual = primeiro;
         int indice = 0;
 
         while (atual != null) {
-            System.out.println("[" + indice + "] " + atual.getDado());
+            System.out.println("[" + indice + "] " + atual.getCarta());
             atual = atual.getProximo();
             indice++;
         }
